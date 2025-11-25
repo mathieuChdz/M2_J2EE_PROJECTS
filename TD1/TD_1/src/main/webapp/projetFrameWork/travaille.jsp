@@ -9,14 +9,18 @@
 <html>
 <head>
   <title>Travaille</title>
+  <link href="/projetFrameWork/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-Bonjour on peut commencer à travailler ! <br/>
+<h2>Bonjour on peut commencer à travailler !</h2>
+<br/>
 
-<form action="quitter.do" method="post">
-  <input type="submit" value="quitter">
-</form>
+<div class="form-travaille">
+  <form action="quitter.do" method="post">
+    <input type="submit" value="quitter">
+  </form>
+</div>
 
 </body>
 </html>

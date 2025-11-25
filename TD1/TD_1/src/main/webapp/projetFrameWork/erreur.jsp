@@ -9,12 +9,16 @@
 <html>
 <head>
     <title>Erreur</title>
+    <link href="/projetFrameWork/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-Erreur
 
-<form action="encore.do" method="post">
-    <input type="submit" value="recommencer">
-</form>
+<h2>Erreur</h2>
+
+<div class="form-erreur">
+    <form action="encore.do" method="post">
+        <input type="submit" value="recommencer">
+    </form>
+</div>
 </body>
 </html>
