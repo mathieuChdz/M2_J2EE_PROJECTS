@@ -1,0 +1,84 @@
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: monospace;
+
+    background: linear-gradient(
+            90deg,
+            rgb(215, 121, 253) 0%,
+            rgb(179, 183, 206) 50%,
+            rgb(222, 135, 64) 100%
+    );
+    background-size: 200% 100%; /* Gradient plus large pour le mouvement */
+    animation: moveBG 5s linear infinite; /* Animation infinie */
+}
+
+@keyframes moveBG {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 0%; }
+    100% { background-position: 0% 0%; }
+}
+
+h2{
+    text-align: center;
+    margin-top: 7em;
+}
+
+.form-connexion,
+.form-erreur,
+.form-travaille{
+    text-align: center;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+
+}
+
+.form-connexion{
+    margin-top: 10em;
+}
+
+form{
+    padding: 4em;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(182, 182, 182, 0.2);
+    border-radius: 10px;
+    border: 1px solid #76020a;
+}
+
+.form-connexion h1{
+    margin-top: -1px;
+    color: white;
+}
+
+form input[type="text"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 7px;
+    border: 1px solid #76020a;
+    box-sizing: border-box;
+    background-color: rgba(118, 2, 10, 0.2);
+}
+input::placeholder {
+    color: white;
+}
+
+form input[type="submit"]{
+    background-color: rgb(118, 2, 10, 0.3);
+    color: white;
+    padding: 5px 15px;
+    margin: 8px 0;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    border: solid 1px #76020a;
+    outline: none;
+}
