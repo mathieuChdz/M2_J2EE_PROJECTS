@@ -17,7 +17,7 @@
         <property name="nom"   value="michelin"/>
     </bean>
 
-    <bean id="identite" class="fr.amis.tp4.entity.Identite" autowire="byType"/>
+    <bean id="id" class="fr.amis.tp4.entity.Identite" autowire="byType"/>
 
     <bean id="application" class="fr.amis.tp4.entity.Application" autowire="byName"/>
 

@@ -2,13 +2,13 @@ package fr.amis.tp4.entity;
 
 public class Application {
     private Fournisseur fournisseur;
-    private int id;
+    private Identite id;
 
     public void setFournisseur(Fournisseur fournisseur) {
         this.fournisseur = fournisseur;
     }
 
-    public void setId(int id) {
+    public void setId(Identite id) {
         this.id = id;
     }
 
