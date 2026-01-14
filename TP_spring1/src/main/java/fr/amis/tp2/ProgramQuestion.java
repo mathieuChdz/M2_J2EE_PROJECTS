@@ -1,9 +1,9 @@
-package fr.amis.tp1;
+package fr.amis.tp2;
 
-import fr.amis.tp1.service.Configure;
-import fr.amis.tp1.service.FournisseurDeQuestions;
-import fr.amis.tp1.service.InterfaceConfiguration;
-import fr.amis.tp1.service.InterfaceFournisseurDeQuestions;
+import fr.amis.tp2.service.Configure;
+import fr.amis.tp2.service.FournisseurDeQuestions;
+import fr.amis.tp2.service.InterfaceConfiguration;
+import fr.amis.tp2.service.InterfaceFournisseurDeQuestions;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

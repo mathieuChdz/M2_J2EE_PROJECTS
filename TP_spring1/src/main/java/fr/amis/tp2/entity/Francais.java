@@ -1,4 +1,4 @@
-package fr.amis.tp1.entity;
+package fr.amis.tp2.entity;
 
 public class Francais implements Langue {
 

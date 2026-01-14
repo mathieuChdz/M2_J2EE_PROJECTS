@@ -1,7 +1,4 @@
-package fr.amis.tp2.entity;
-
-import fr.amis.tp2.entity.ModeLivraison;
-import fr.amis.tp2.entity.Option;
+package fr.amis.tp3.entity;
 
 import java.util.List;
 

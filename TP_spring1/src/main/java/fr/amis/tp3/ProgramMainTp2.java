@@ -1,7 +1,7 @@
-package fr.amis.tp2;
+package fr.amis.tp3;
 
-import fr.amis.tp2.service.InterfaceServiceMagasin;
-import fr.amis.tp2.service.ServiceMagasin;
+import fr.amis.tp3.service.InterfaceServiceMagasin;
+import fr.amis.tp3.service.ServiceMagasin;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

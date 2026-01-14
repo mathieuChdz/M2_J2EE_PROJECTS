@@ -1,6 +1,6 @@
-package fr.amis.tp1.service;
+package fr.amis.tp2.service;
 
-import fr.amis.tp1.entity.Questions;
+import fr.amis.tp2.entity.Questions;
 
 public class FournisseurDeQuestions implements InterfaceFournisseurDeQuestions{
     Questions lesQuestions;

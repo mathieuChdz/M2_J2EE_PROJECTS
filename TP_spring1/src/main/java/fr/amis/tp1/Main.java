@@ -1,5 +1,6 @@
-package fr.amis.tp1.composant;
+package fr.amis.tp1;
 
+import fr.amis.tp1.composant.HelloWorld;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

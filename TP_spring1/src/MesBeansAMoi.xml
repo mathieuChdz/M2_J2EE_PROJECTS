@@ -4,20 +4,20 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 
-    <bean id="QS" class="fr.amis.tp1.entity.QuestionSport"></bean>
-    <bean id="QY" class="fr.amis.tp1.entity.QuestionsYoga"></bean>
+    <bean id="QS" class="fr.amis.tp2.entity.QuestionSport"></bean>
+    <bean id="QY" class="fr.amis.tp2.entity.QuestionsYoga"></bean>
 
-    <bean id="titi" class="fr.amis.tp1.service.FournisseurDeQuestions">
+    <bean id="titi" class="fr.amis.tp2.service.FournisseurDeQuestions">
         <property name="lesQuestions"   ref="QY"/>
     </bean>
 
 
-    <bean id="LF" class="fr.amis.tp1.entity.Francais"></bean>
-    <bean id="LA" class="fr.amis.tp1.entity.Anglais"></bean>
-    <bean id="SW" class="fr.amis.tp1.entity.Windows"></bean>
-    <bean id="SU" class="fr.amis.tp1.entity.Unix"></bean>
+    <bean id="LF" class="fr.amis.tp2.entity.Francais"></bean>
+    <bean id="LA" class="fr.amis.tp2.entity.Anglais"></bean>
+    <bean id="SW" class="fr.amis.tp2.entity.Windows"></bean>
+    <bean id="SU" class="fr.amis.tp2.entity.Unix"></bean>
 
-    <bean id="choixEnvironnemnt" class="fr.amis.tp1.service.Configure">
+    <bean id="choixEnvironnemnt" class="fr.amis.tp2.service.Configure">
         <property name="laLangue"   ref="LA"/>
         <property name="leSysteme"   ref="SW"/>
     </bean>

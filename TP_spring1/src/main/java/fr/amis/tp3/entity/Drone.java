@@ -1,4 +1,4 @@
-package fr.amis.tp2.entity;
+package fr.amis.tp3.entity;
 
 public class Drone implements ModeLivraison {
     private String typeLogement;

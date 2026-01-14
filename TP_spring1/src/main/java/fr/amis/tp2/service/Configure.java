@@ -1,7 +1,7 @@
-package fr.amis.tp1.service;
+package fr.amis.tp2.service;
 
-import fr.amis.tp1.entity.Langue;
-import fr.amis.tp1.entity.Systeme;
+import fr.amis.tp2.entity.Langue;
+import fr.amis.tp2.entity.Systeme;
 
 public class Configure implements InterfaceConfiguration{
 

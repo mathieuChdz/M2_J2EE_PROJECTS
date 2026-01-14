@@ -1,8 +1,7 @@
-package fr.amis.tp2.service;
+package fr.amis.tp3.service;
 
-import fr.amis.tp1.entity.Questions;
-import fr.amis.tp2.entity.IMagasin;
-import fr.amis.tp2.entity.Magasin;
+import fr.amis.tp3.entity.IMagasin;
+import fr.amis.tp3.entity.Magasin;
 
 public class ServiceMagasin implements InterfaceServiceMagasin{
     IMagasin magasin;

@@ -4,23 +4,23 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 
-    <bean id="livraisonClassique" class="fr.amis.tp2.entity.Classique">
+    <bean id="livraisonClassique" class="fr.amis.tp3.entity.Classique">
         <property name="delaiMoyenJours" value="5"/>
     </bean>
 
-    <bean id="livraisonDrone" class="fr.amis.tp2.entity.Drone">
+    <bean id="livraisonDrone" class="fr.amis.tp3.entity.Drone">
         <property name="typeLogement" value="maison"/>
     </bean>
 
-    <bean id="optionRetour" class="fr.amis.tp2.entity.OptionRetour">
+    <bean id="optionRetour" class="fr.amis.tp3.entity.OptionRetour">
         <property name="nbJours" value="14"/>
     </bean>
 
-    <bean id="optionPrime" class="fr.amis.tp2.entity.OptionPrime">
+    <bean id="optionPrime" class="fr.amis.tp3.entity.OptionPrime">
         <property name="avecAbonnement" value="true"/>
     </bean>
 
-    <bean id="magasin" class="fr.amis.tp2.entity.Magasin" >
+    <bean id="magasin" class="fr.amis.tp3.entity.Magasin" >
         <constructor-arg  value="Amazon" />
         <property name="modeLivraison" ref="livraisonClassique"/>
         <property name="options">
@@ -35,7 +35,7 @@
         </property>
     </bean>
 
-    <bean id="serviceMagasin" class="fr.amis.tp2.service.ServiceMagasin">
+    <bean id="serviceMagasin" class="fr.amis.tp3.service.ServiceMagasin">
         <property name="magasin" ref="magasin"/>
     </bean>
 

@@ -1,6 +1,4 @@
-package fr.amis.tp2.entity;
-
-import fr.amis.tp1.entity.Questions;
+package fr.amis.tp3.entity;
 
 public class OptionRetour implements Option{
 

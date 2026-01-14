@@ -1,4 +1,4 @@
-package fr.amis.tp1.service;
+package fr.amis.tp2.service;
 
 public interface InterfaceFournisseurDeQuestions {
     void genereQuestionnaire();
