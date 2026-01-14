@@ -5,7 +5,7 @@ import fr.amis.tp3.service.ServiceMagasin;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class ProgramMainTp2 {
+public class ProgramMainTp3 {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("magasin.xml");
         InterfaceServiceMagasin serviceMagasin =
