@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+
+<hibernate-mapping >
+
+    <class name="entity.Personne2" table="personnes_2">
+        <id name="P_Id" column="id">
+            <generator class="increment"/>
+        </id>
+
+        <property name="nom" column="nom" />
+        <property name="prenom" column="prenom" />
+
+        <component name="adresse" class="entity.Adresse">
+            <property name="codePostal" column="code_postal" />
+            <property name="ville" column="ville" />
+        </component>
+
+        <many-to-one name="info" class="entity.Info" column="info"/>
+
+        <set name="diplomes" table="PERSON_DIPLOMES">
+            <key column="PERSON_ID" />
+            <many-to-many column="DIPLOME_ID" class="entity.Diplome" />
+        </set>
+
+        <joined-subclass name="entity.Etudiant2" table="etudiant">
+            <key column="etudiant_id"/>
+            <property name="num_etudiant" column="num_etudiant" />
+        </joined-subclass>
+
+        <joined-subclass name="entity.Prof2" table="prof">
+            <key column="prof_id"/>
+            <property name="num_prof" column="num_prof" />
+        </joined-subclass>
+
+    </class>
+
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <lien>
+        <url-pattern>/login.do</url-pattern>
+        <actions>fr.uvsq.amis.projet2.actions.ActionLogin</actions>
+    </lien>
+    <lien>
+        <url-pattern>/quitter.do</url-pattern>
+        <actions>fr.uvsq.amis.projet2.actions.ActionQuitter</actions>
+    </lien>
+    <lien>
+        <url-pattern>/encore.do</url-pattern>
+        <actions>fr.uvsq.amis.projet2.actions.ActionEncore</actions>
+    </lien>
+    <lien>
+        <url-pattern>/index.jsp</url-pattern>
+        <actions>fr.uvsq.amis.projet2.actions.ActionIndex</actions>
+    </lien>
+</data>
