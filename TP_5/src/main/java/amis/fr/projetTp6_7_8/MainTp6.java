@@ -1,0 +1,24 @@
+package amis.fr.projetTp6_7_8;
+
+import amis.fr.projetTp6_7_8.entity.Login;
+import amis.fr.projetTp6_7_8.service.ServiceLogin;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class MainTp6 {
+
+    public static void main(String[] args) {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+        context.scan("amis.fr.projetTp6_7_8");
+        context.refresh();
+
+        ServiceLogin serviceLogin = context.getBean(ServiceLogin.class);
+
+        Login login = new Login();
+        login.setName("boss");
+
+        serviceLogin.createLogin(login);
+        System.out.println(serviceLogin.isValidLogin(login));
+        System.out.println(serviceLogin.findByNameLogin("boss").toString());
+
+    }
+}
