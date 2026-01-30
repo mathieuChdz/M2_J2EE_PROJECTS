@@ -16,9 +16,11 @@ public class MainTp6 {
         Login login = new Login();
         login.setName("boss");
 
+        /*
         serviceLogin.createLogin(login);
         System.out.println(serviceLogin.isValidLogin(login));
         System.out.println(serviceLogin.findByNameLogin("boss").toString());
+         */
 
     }
 }

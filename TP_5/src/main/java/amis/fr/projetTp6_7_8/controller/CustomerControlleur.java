@@ -17,11 +17,13 @@ public class CustomerControlleur {
     @Autowired
     private ServiceCustomer serviceCustomer;
 
+    /*
     @RequestMapping(value = "/")
     public String home(Model model){
         model.addAttribute("login", new Login());
         return "index";
     }
+     */
 
     @RequestMapping(value = "/new")
     public String newCustomerForm(Model model) {
@@ -38,20 +40,6 @@ public class CustomerControlleur {
         return "accueil";
     }
      */
-
-    @RequestMapping(value = "/debut", method = RequestMethod.POST)
-    public String start(@ModelAttribute("login") Login login, Model model) {
-
-        String name = login.getName();
-        System.out.println("name :"+name);
-
-        if (name.equals("boss")){
-            model.addAttribute("listCustomer", serviceCustomer.listAll());
-
-            return "accueil";
-        }
-        return "index";
-    }
 
     @RequestMapping(value = "/sauve", method = RequestMethod.POST)
     public String sauve(@ModelAttribute("customer") Customer customer, Model model) {

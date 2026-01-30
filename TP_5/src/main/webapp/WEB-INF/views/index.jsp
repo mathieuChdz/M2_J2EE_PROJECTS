@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link href="/projetFrameWork/style.css" rel="stylesheet" type="text/css">
+    <link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 

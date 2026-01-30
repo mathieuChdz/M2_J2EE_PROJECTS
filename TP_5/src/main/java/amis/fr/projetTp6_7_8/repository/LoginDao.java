@@ -8,28 +8,4 @@ import java.util.ArrayList;
 @Repository
 public class LoginDao {
 
-    private ArrayList<Login> logins = new ArrayList<>();
-
-    public void insertLogin(Login login){
-        logins.add(login);
-    }
-
-    public Login findByName(String name){
-        for (Login item : logins){
-            if (item.getName().equals(name)){
-                return item;
-            }
-        }
-        return null;
-    }
-
-    public boolean isValid(Login login) {
-        for (Login item : logins) {
-            if (item.getName().equals(login.getName())) {
-                return true;
-            }
-        }
-        return false;
-    }
-
 }
