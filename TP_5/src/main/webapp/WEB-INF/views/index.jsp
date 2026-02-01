@@ -27,7 +27,7 @@
             <h1>Connexion</h1>
 
             <div class="form-row">
-                <label for="name">Login</label>
+                <label for="name">Login (le login est : toto)</label>
                 <form:input path="name" id="name" placeholder="Name"/>
             </div>
 
