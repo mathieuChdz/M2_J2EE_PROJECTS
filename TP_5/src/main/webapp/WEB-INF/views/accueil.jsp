@@ -14,41 +14,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Accueil</title>
-    <link href="/projetFrameWork/style.css" rel="stylesheet" type="text/css">
+    <link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-<form:form action="new" method="post">
-    <input type="submit" value="Nouveau">
-</form:form>
+<div class="form-new-customer">
+    <form:form action="new" method="post">
+        <h2>Nouveau customer</h2>
+        <input type="submit" value="Nouveau">
+    </form:form>
+</div>
 
-<table border="1" cellpadding="5">
-    <tr>
-        <th>Nom</th>
-        <th>Email</th>
-        <th>Rue</th>
-        <th>Ville</th>
-        <th>Actions</th>
-    </tr>
 
-    <c:forEach var="c" items="${listCustomer}">
+<div class="table-customers">
+    <table>
         <tr>
-            <td>${c.name}</td>
-            <td>${c.email}</td>
-            <td>${c.adresse.rue}</td>
-            <td>${c.adresse.ville}</td>
-            <td>
-                <a href="${pageContext.request.contextPath}/customer/edit?id=${c.id}">
-                    Edit
-                </a>
-                <form action="/delete" method="post" style="display:inline;">
-                    <input type="hidden" name="id" value="${c.id}" />
-                    <input type="submit" value="Supprimer" onclick="return confirm('Supprimer ce client ? SUR ?');"/>
-                </form>
-            </td>
+            <th>Nom</th>
+            <th>Email</th>
+            <th>Rue</th>
+            <th>Ville</th>
+            <th>Actions</th>
         </tr>
-    </c:forEach>
-</table>
+
+        <c:forEach var="c" items="${listCustomer}">
+            <tr>
+                <td>${c.name}</td>
+                <td>${c.email}</td>
+                <td>${c.adresse.rue}</td>
+                <td>${c.adresse.ville}</td>
+                <td>
+                    <div class="form-new-customer-actions">
+                        <a href="${pageContext.request.contextPath}/customer/edit?id=${c.id}" class="btn">
+                            Edit
+                        </a>
+                        <form action="/delete" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="${c.id}" />
+                            <input type="submit" value="Supprimer"/>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </c:forEach>
+    </table>
+</div>
+
 
 </body>
 </html>

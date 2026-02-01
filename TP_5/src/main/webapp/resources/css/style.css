@@ -5,25 +5,28 @@ body {
     background-size: cover;
     font-family: monospace;
 
-    background: linear-gradient(
-            90deg,
-            rgb(215, 121, 253) 0%,
-            rgb(179, 183, 206) 50%,
-            rgb(222, 135, 64) 100%
-    );
-    background-size: 200% 100%; /* Gradient plus large pour le mouvement */
-    animation: moveBG 5s linear infinite; /* Animation infinie */
+    background: linear-gradient(90deg, rgb(97,92,91), rgb(245,73,29));
+    background-size: 200% 100%;
+    animation: moveBG 3s ease-in-out infinite alternate;
 }
 
 @keyframes moveBG {
     0% { background-position: 0% 0%; }
-    50% { background-position: 100% 0%; }
-    100% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
 }
 
-h2{
+.container-index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+h2,
+.header-title{
     text-align: center;
-    margin-top: 7em;
+    font-size: 2.5em;
+    color: aliceblue;
 }
 
 .form-connexion,
@@ -39,8 +42,8 @@ h2{
 
 }
 
-.form-connexion{
-    margin-top: 10em;
+input {
+    color: white;
 }
 
 form{
@@ -57,6 +60,24 @@ form{
     color: white;
 }
 
+.form-row {
+    width: 100%;
+    align-items: center;
+    color: aliceblue;
+}
+
+.form-row-adresse {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.form-row label {
+    min-width: 60px;
+}
+
 form input[type="text"]{
     width: 100%;
     padding: 12px 20px;
@@ -67,8 +88,9 @@ form input[type="text"]{
     box-sizing: border-box;
     background-color: rgba(118, 2, 10, 0.2);
 }
+
 input::placeholder {
-    color: white;
+    color: #d9cfcf;
 }
 
 form input[type="submit"]{
@@ -79,6 +101,83 @@ form input[type="submit"]{
     cursor: pointer;
     font-size: 20px;
     border-radius: 5px;
-    border: solid 1px #76020a;
+    border: 0;
     outline: none;
+}
+
+.table-customers{
+    display: flex;
+    justify-content: center;
+}
+
+.table-customers table{
+    width: 100%;
+}
+
+.table-customers table th{
+    padding: 0.5em;
+    background-color: #f5fafb82;
+    border-radius: 5px;
+}
+
+.table-customers table td{
+    text-align: center;
+    padding: 0.5em;
+    background-color: #bcc5c782;
+    border-radius: 5px;
+}
+
+.table-customers table form{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.form-new-customer-actions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+.form-new-customer form{
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    border: 0;
+    background-color: transparent;
+}
+
+.form-new-customer input{
+    width: 30%;
+    align-items: center;
+}
+
+input[type="submit"]:hover,
+.btn:hover{
+    background-color: rgb(231 116 124 / 30%);
+    transition: all 0.1s;
+}
+
+.form-actions input{
+    width: 100%;
+    margin-top: 2em;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: rgb(118, 2, 10, 0.3);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
 }

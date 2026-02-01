@@ -1,8 +1,8 @@
-package amis.fr.projetTp6_7_8.controller;
+package amis.fr.projetCustomers.controller;
 
-import amis.fr.projetTp6_7_8.entity.Login;
-import amis.fr.projetTp6_7_8.service.ServiceCustomer;
-import amis.fr.projetTp6_7_8.service.ServiceLogin;
+import amis.fr.projetCustomers.entity.Login;
+import amis.fr.projetCustomers.service.ServiceCustomer;
+import amis.fr.projetCustomers.service.ServiceLogin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

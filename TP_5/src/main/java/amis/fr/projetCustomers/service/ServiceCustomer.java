@@ -1,7 +1,7 @@
-package amis.fr.projetTp6_7_8.service;
+package amis.fr.projetCustomers.service;
 
-import amis.fr.projetTp6_7_8.entity.Customer;
-import amis.fr.projetTp6_7_8.repository.ICustomerDao;
+import amis.fr.projetCustomers.entity.Customer;
+import amis.fr.projetCustomers.repository.ICustomerDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

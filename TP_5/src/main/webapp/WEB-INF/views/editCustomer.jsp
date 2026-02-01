@@ -13,20 +13,39 @@
 <html>
 <head>
     <title>Edit Customer</title>
+    <link href="${pageContext.request.contextPath}/resources/css/style.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 
 <form:form method="post" action="/update" modelAttribute="customer">
 
-  <form:hidden path="id"/>
+    <form:hidden path="id"/>
 
-  Nom : <form:input path="name"/><br/>
-  Email : <form:input path="email"/><br/>
+    <h2>Modification d'un customer</h2>
 
-  Rue : <form:input path="adresse.rue"/><br/>
-  Ville : <form:input path="adresse.ville"/><br/>
+    <div class="form-row">
+        <label for="name">Name</label>
+        <form:input path="name" id="name" placeholder="Name"/>
+    </div>
 
-  <input type="submit" value="Enregistrer"/>
+    <div class="form-row">
+        <label for="email">Email</label>
+        <form:input path="email" id="email" placeholder="Email"/>
+    </div>
+
+    <div class="form-row">
+        <label>Adresse</label>
+        <div class="form-row-adresse">
+            <form:input path="adresse.rue" placeholder="Rue"/>
+            <form:input path="adresse.ville" placeholder="Ville"/>
+        </div>
+    </div>
+
+    <div class="form-actions">
+        <input type="submit" value="Sauvegarder">
+    </div>
 </form:form>
+
 </body>
 </html>

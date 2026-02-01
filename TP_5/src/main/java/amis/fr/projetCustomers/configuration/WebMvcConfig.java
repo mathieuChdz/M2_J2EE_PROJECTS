@@ -1,4 +1,4 @@
-package amis.fr.projetTp6_7_8.configuration;
+package amis.fr.projetCustomers.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -10,7 +10,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("amis.fr.projetTp6_7_8")
+@ComponentScan("amis.fr.projetCustomers")
 public class WebMvcConfig implements WebMvcConfigurer {
     @Bean(name = "viewResolver")
     public InternalResourceViewResolver getViewResolver() {

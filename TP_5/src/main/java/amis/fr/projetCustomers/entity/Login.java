@@ -1,4 +1,4 @@
-package amis.fr.projetTp6_7_8.entity;
+package amis.fr.projetCustomers.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

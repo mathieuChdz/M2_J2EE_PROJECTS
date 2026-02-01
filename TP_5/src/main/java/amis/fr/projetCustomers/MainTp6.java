@@ -1,14 +1,14 @@
-package amis.fr.projetTp6_7_8;
+package amis.fr.projetCustomers;
 
-import amis.fr.projetTp6_7_8.entity.Login;
-import amis.fr.projetTp6_7_8.service.ServiceLogin;
+import amis.fr.projetCustomers.entity.Login;
+import amis.fr.projetCustomers.service.ServiceLogin;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class MainTp6 {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.scan("amis.fr.projetTp6_7_8");
+        context.scan("amis.fr.projetCustomers");
         context.refresh();
 
         ServiceLogin serviceLogin = context.getBean(ServiceLogin.class);

@@ -17,20 +17,23 @@
 </head>
 <body>
 
-<div class="form-connexion">
-    <form:form action="/debut" method="post" modelAttribute="login">
-        <table border="0" cellpadding="5">
-            <tr>
-                <td>Name: </td>
-                <td><form:input path="name" /></td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="submit" value="Sauve">
-                </td>
-            </tr>
-        </table>
-    </form:form>
+<div class="container-index">
+    <div class="header-title">
+        <h2>Projet (CUSTOMERS)</h2>
+    </div>
+
+    <div class="form-connexion">
+        <form:form action="/debut" method="post" modelAttribute="login">
+            <h1>Connexion</h1>
+
+            <div class="form-row">
+                <label for="name">Login</label>
+                <form:input path="name" id="name" placeholder="Name"/>
+            </div>
+
+            <input type="submit" value="Connexion">
+        </form:form>
+    </div>
 </div>
 
 

@@ -1,7 +1,7 @@
-package amis.fr.projetTp6_7_8.configuration;
+package amis.fr.projetCustomers.configuration;
 
-import amis.fr.projetTp6_7_8.entity.Login;
-import amis.fr.projetTp6_7_8.repository.ILoginDao;
+import amis.fr.projetCustomers.entity.Login;
+import amis.fr.projetCustomers.repository.ILoginDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

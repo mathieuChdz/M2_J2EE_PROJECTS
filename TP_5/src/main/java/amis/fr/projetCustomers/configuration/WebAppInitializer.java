@@ -1,4 +1,4 @@
-package amis.fr.projetTp6_7_8.configuration;
+package amis.fr.projetCustomers.configuration;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;

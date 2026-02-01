@@ -1,4 +1,4 @@
-package amis.fr.projetTp6_7_8.configuration;
+package amis.fr.projetCustomers.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,7 +9,7 @@ import org.springframework.orm.jpa.LocalEntityManagerFactoryBean;
 import javax.persistence.EntityManagerFactory;
 
 @Configuration
-@EnableJpaRepositories(basePackages= {"amis.fr.projetTp6_7_8.repository"})
+@EnableJpaRepositories(basePackages= {"amis.fr.projetCustomers.repository"})
 public class AppConfig {
     @Bean
     public LocalEntityManagerFactoryBean entityManagerFactory() {
